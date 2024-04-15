@@ -267,6 +267,7 @@ def main():
     parser.add_argument('--epochs', default=90, type=int)
     parser.add_argument('--train', action='store_true')
     parser.add_argument('--test', action='store_true')
+    parser.add_argument('--demo', action='store_true')
 
     args = parser.parse_args()
 
@@ -291,6 +292,8 @@ def main():
         train(args)
     if args.test:
         test(args)
+    if args.demo:
+        demo(args)
 
 
 if __name__ == "__main__":
