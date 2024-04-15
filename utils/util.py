@@ -116,8 +116,6 @@ def weight_decay(model, lr):
             {'params': p4, 'weight_decay': 1E-4, 'lr': lr}]
 
 
-
-
 def plot_lr(args, optimizer, scheduler, num_steps):
     from matplotlib import pyplot
 
